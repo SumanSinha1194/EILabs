@@ -11,6 +11,21 @@ app.config(function ($routeProvider) {
         templateUrl: "app/Home/home.html"
     });
 
+    $routeProvider.when("/about", {
+        controller: "aboutController",
+        templateUrl: "app/About/about.html"
+    });
+
+    $routeProvider.when("/service", {
+        controller: "serviceController",
+        templateUrl: "app/Service/service.html"
+    });
+
+    $routeProvider.when("/team", {
+        controller: "teamController",
+        templateUrl: "app/Team/team.html"
+    });
+
 
     $routeProvider.otherwise({ redirectTo: "/home" });
 });

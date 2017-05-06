@@ -786,46 +786,77 @@ if ($('.accordion-box').length) {
 
 
 // instance of fuction while Document ready event	
-jQuery(document).on('ready', function () {
-	(function ($) {
-		revolutionSliderActiver();		
-		selectMenu();		
-		tooltip();		
-		fleetGallery();
-		GalleryFancyboxActivator();
-		typed();
-		singleFeaturedHover();
-		respnsiveVideo();
-		priceFilter();
-		cartTouchSpin();
-		videoFancybox();
-		selectDropdown();
-		tabbox();
-		imgbxslider();
-		handlePreloader();
-		scrollToTop();
-		singleProduct();
-		themeMenu();
-		testimonialsCarosuleGardener();
-		thmLightBox();
-		galleryMasonaryLayout();
+//jQuery(document).on('ready', function () {
+//	(function ($) {
+//		revolutionSliderActiver();		
+//		selectMenu();		
+//		tooltip();		
+//		fleetGallery();
+//		GalleryFancyboxActivator();
+//		typed();
+//		singleFeaturedHover();
+//		respnsiveVideo();
+//		priceFilter();
+//		cartTouchSpin();
+//		videoFancybox();
+//		selectDropdown();
+//		tabbox();
+//		imgbxslider();
+//		handlePreloader();
+//		scrollToTop();
+//		singleProduct();
+//		themeMenu();
+//		testimonialsCarosuleGardener();
+//		thmLightBox();
+//		galleryMasonaryLayout();
 		
-	})(jQuery);
-});
+//	})(jQuery);
+//});
+
+revolutionSliderActiver();
+selectMenu();
+tooltip();
+fleetGallery();
+GalleryFancyboxActivator();
+typed();
+singleFeaturedHover();
+respnsiveVideo();
+priceFilter();
+cartTouchSpin();
+videoFancybox();
+selectDropdown();
+tabbox();
+imgbxslider();
+handlePreloader();
+scrollToTop();
+singleProduct();
+themeMenu();
+testimonialsCarosuleGardener();
+thmLightBox();
+galleryMasonaryLayout();
 
 // instance of fuction while Window Load event
-jQuery(window).on('load', function () {
-	(function ($) {
-		clientCarousel();
-		gallerycarousel();
-		galleryslide();
-		testimonialsarousel();
-		testimonialsarousel2();
-		feedbackcarousel();
-		teamcarousel();
-		twocolumncarousel();
-	})(jQuery);
-});
+//jQuery(window).on('load', function () {
+//	(function ($) {
+//	    clientCarousel();
+//		gallerycarousel();
+//		galleryslide();
+//		testimonialsarousel();
+//		testimonialsarousel2();
+//		feedbackcarousel();
+//		teamcarousel();
+//		twocolumncarousel();
+//	})(jQuery);
+//});
+
+clientCarousel();
+gallerycarousel();
+galleryslide();
+testimonialsarousel();
+testimonialsarousel2();
+feedbackcarousel();
+teamcarousel();
+twocolumncarousel();
 
 // instance of fuction while Window Scroll event
 jQuery(window).on('scroll', function () {	
