@@ -62,7 +62,14 @@ app.controller('homeController', ['$scope', '$rootScope', function ($scope, $roo
 
     }
 
+    $scope.handlePreloader = function() {
+        if($('.preloader').length){
+            $('.preloader').delay(200).fadeOut(500);
+        }
+    }
+
     $scope.startSlider();
+    $scope.handlePreloader();
 
 
 }]);
