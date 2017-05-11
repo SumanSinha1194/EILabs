@@ -86,8 +86,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Blog\blog-details.html" />
     <Content Include="app\Blog\blog.html" />
     <Content Include="app\Blog\blogController.js" />
+    <Content Include="app\Blog\blogService.js" />
+    <Content Include="app\Common\errorService.js" />
     <Content Include="app\Initiative\initiative.html" />
     <Content Include="app\Initiative\initiativeController.js" />
     <Content Include="app\Contact\contact.html" />

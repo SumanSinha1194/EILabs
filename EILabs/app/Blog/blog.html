@@ -1,4 +1,4 @@
-﻿<div class="inner-banner has-base-color-overlay text-center" style="background: url(images/background/Blogging-Banner.jpg);">
+﻿<div class="inner-banner has-base-color-overlay text-center" style="background: url(images/background/Blogging-Banner.jpg);" data-ng-init="blogSearch()">
     <div class="container">
         <div class="box">
             <h3>Our Blogs</h3>
@@ -27,79 +27,21 @@
 <section class="our-services style-2">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="service-single.html"><img src="images/service/1.jpg" alt="Awesome Image"></a>
-                    </figure>
-                    <div class="text-box">
-                        <a href="service-single.html"><h4>Business Growth</h4></a>
-                        <p>The process of improving some measure of an enterprise's success. Business growth can be a achieved either by boosting of the top line or revenue of the business.</p>
+            <div class="col-md-4 col-sm-6" data-ng-repeat="blog in blogList">
+                <div class="default-blog-news wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="img-box">
+                        <a href="#!/blog-detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" alt="News"></a>
                     </div>
+                    <div class="lower-content">
+                        <div class="post-meta">by {{blog.author.displayName}}  |  {{blog.published | date:"EEE dd MMM, yyyy 'at' h:mma"}}</div>
+                        <div class="text">
+                            <h4><a href="#!/blog-detail?blogid={{blog.id}}">{{blog.title}}</a></h4>
+                            <p>{{blog.plainText | characters:180}}</p>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="service-single.html"><img src="images/service/2.jpg" alt="Awesome Image"></a>
-                    </figure>
-                    <div class="text-box">
-                        <a href="service-single.html"><h4>Sustainability</h4></a>
-                        <p>Sustainability is a priority interest for many of organizations, when it comes to sustainability and corporate responsibility, we believe the normal rules of business apply. </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="service-single.html"><img src="images/service/3.jpg" alt="Awesome Image"></a>
-                    </figure>
-                    <div class="text-box">
-                        <a href="service-single.html"><h4>Performance</h4></a>
-                        <p>In a contract, performance is deemed to be the fulfillment of an obligation, in a manner that releases the performer from all liabilities under the contract of both you and us.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="service-single.html"><img src="images/service/4.jpg" alt="Awesome Image"></a>
-                    </figure>
-                    <div class="text-box">
-                        <a href="service-single.html"><h4>Advanced Analytics</h4></a>
-                        <p>Business analytics is the practice of iterative, methodical exploration of organization's data with emphasis statistical analysis. Typically beyond those traditional business.  </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="service-single.html"><img src="images/service/5.jpg" alt="Awesome Image"></a>
-                    </figure>
-                    <div class="text-box">
-                        <a href="service-single.html"><h4>Customer Insights</h4></a>
-                        <p>Is an interpretation of trends in human behaviors which aims to increase effectiveness of a product or service for the consumer, as well as increase sales mutual benefit.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="service-single.html"><img src="images/service/6.jpg" alt="Awesome Image"></a>
-                    </figure>
-                    <div class="text-box">
-                        <a href="service-single.html"><h4>Organization</h4></a>
-                        <p>We help business improve financial performance by ensuring the entire organization system is aligned and set up to deliver on the company’s objectives of all the time.</p>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
     </div>
 </section>

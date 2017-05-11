@@ -36,9 +36,14 @@ app.config(function ($routeProvider) {
         templateUrl: "app/Service/expression_expert.html"
     });
 
-    $routeProvider.when("/blog", {
+    $routeProvider.when("/blog-list", {
         controller: "blogController",
         templateUrl: "app/Blog/blog.html"
+    });
+
+    $routeProvider.when("/blog-detail", {
+        controller: "blogController",
+        templateUrl: "app/Blog/blog-details.html"
     });
 
     $routeProvider.when("/team", {
