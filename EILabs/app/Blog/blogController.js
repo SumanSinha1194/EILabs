@@ -45,6 +45,7 @@ app.controller('blogController', ['$scope', '$rootScope', '$location', 'blogServ
                     results.data.plainText = str;
                     // formatted data
                     $scope.blogDetail = results.data;
+                    //$scope.facebook();
                 }
                     // for list passing data into blogList array
                 else {
@@ -84,6 +85,23 @@ app.controller('blogController', ['$scope', '$rootScope', '$location', 'blogServ
         }
     }
 
+    $scope.facebook = function () {
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+            else {
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+
+        }(document, 'script', 'facebook-jssdk'));
+    }
 
 }]);
 

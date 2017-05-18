@@ -199,7 +199,7 @@ function gallerycarousel () {
 		    dots: false,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true,
 		    responsive: {
 		        0:{
@@ -238,7 +238,7 @@ function galleryslide () {
 		    dots: true,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true
 		});
 	};
@@ -256,7 +256,7 @@ function testimonialsarousel () {
 		    dots: true,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true
 		});
 	};
@@ -272,7 +272,7 @@ function testimonialsarousel2 () {
 		    dots: true,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true
 		});
 	};
@@ -289,7 +289,7 @@ function feedbackcarousel () {
 		    dots: true,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true
 		});
 	};
@@ -305,7 +305,7 @@ function teamcarousel () {
 		    dots: false,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true,
 		    responsive: {
 		        0:{
@@ -337,7 +337,7 @@ function twocolumncarousel () {
 		    dots: true,
 		    autoWidth: false,
 		    autoplay:true,
-		    autoplayTimeout:3000,
+		    autoplayTimeout:1000,
 		    autoplayHoverPause:true,
 		    responsive: {
 		        0:{
@@ -718,7 +718,7 @@ if ($('.latest-project-carousel').length) {
         dots: false,
         autoWidth: false,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 1000,
         autoplayHoverPause: true,
         responsive: {
             0: {

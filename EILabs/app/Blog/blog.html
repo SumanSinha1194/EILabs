@@ -11,7 +11,7 @@
         <div class="pull-left">
             <ul class="list-inline link-list">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="#!/home">Home</a>
                 </li>
                 <li>
                     Blog
@@ -28,14 +28,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6" data-ng-repeat="blog in blogList">
-                <div class="default-blog-news wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <div class="img-box">
-                        <a href="#!/blog-detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" alt="News"></a>
+                <div class="default-blog-news">
+                    <div class="img-box" style="border:1px solid #f4f4f4;">
+                        <a href="#!/blog_detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" style="height:200px; width:370px;" alt="News"></a>
                     </div>
                     <div class="lower-content">
                         <div class="post-meta">by {{blog.author.displayName}}  |  {{blog.published | date:"EEE dd MMM, yyyy 'at' h:mma"}}</div>
                         <div class="text">
-                            <h4><a href="#!/blog-detail?blogid={{blog.id}}">{{blog.title}}</a></h4>
+                            <h4><a href="#!/blog_detail?blogid={{blog.id}}">{{blog.title | characters:30}}</a></h4>
                             <p>{{blog.plainText | characters:180}}</p>
                         </div>
 
@@ -45,4 +45,3 @@
         </div>
     </div>
 </section>
-

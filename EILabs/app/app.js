@@ -36,12 +36,12 @@ app.config(function ($routeProvider) {
         templateUrl: "app/Service/expression_expert.html"
     });
 
-    $routeProvider.when("/blog-list", {
+    $routeProvider.when("/blog_list", {
         controller: "blogController",
         templateUrl: "app/Blog/blog.html"
     });
 
-    $routeProvider.when("/blog-detail", {
+    $routeProvider.when("/blog_detail", {
         controller: "blogController",
         templateUrl: "app/Blog/blog-details.html"
     });
@@ -64,6 +64,3 @@ app.config(function ($routeProvider) {
     $routeProvider.otherwise({ redirectTo: "/home" });
 });
 /*End Web Routes*/
-
-
-
