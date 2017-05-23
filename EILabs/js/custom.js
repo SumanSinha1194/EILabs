@@ -745,7 +745,44 @@ if ($('.latest-project-carousel').length) {
     });
 };
 
-
+if ($('.blog-project-carousel').length) {
+    $('.blog-project-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ],
+        dots: false,
+        autoWidth: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                autoWidth: false
+            },
+            480: {
+                items: 1,
+                autoWidth: false
+            },
+            600: {
+                items: 2,
+                autoWidth: false
+            },
+            768: {
+                items: 3,
+                autoWidth: false
+            },
+            1000: {
+                items: 3,
+                autoWidth: false
+            }
+        }
+    });
+};
 	
 if ($('.accordion-box').length) {
     $('.accordion-box .acc-btn').click(function() {

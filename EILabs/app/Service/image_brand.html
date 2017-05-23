@@ -50,10 +50,10 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="img-box">
                             <img src="images/resource/20160309065812-shutterstock-236672323.jpeg" alt="">
-                        </div> 
+                        </div>
                         <br>
                         <h4>For, Multinational Brands Companies and Startups</h4>
-                        <br>           
+                        <br>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="img-box">
@@ -71,6 +71,31 @@
 </section>
 
 <div class="container"><div class="border-bottom"></div></div>
+
+<section class="three-column sec-padd-top bg">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Image & Brand Blogs</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6" data-ng-repeat="blog in blogList">
+                <div class="default-blog-news">
+                    <div class="img-box" style="border:1px solid #f4f4f4;">
+                        <a href="#!/blog_detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" style="height:200px; width:370px;" alt="News"></a>
+                    </div>
+                    <div class="lower-content">
+                        <div class="post-meta">by {{blog.author.displayName}}  |  {{blog.published | date:"EEE dd MMM, yyyy 'at' h:mma"}}</div>
+                        <div class="text">
+                            <h4><a href="#!/blog_detail?blogid={{blog.id}}">{{blog.title | characters:30}}</a></h4>
+                            <p>{{blog.plainText | characters:150}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="latest-project sec-padd">
     <div class="container">

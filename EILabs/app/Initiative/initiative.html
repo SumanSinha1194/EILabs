@@ -56,8 +56,33 @@
     </div>
 </section>
 
+<section class="three-column sec-padd-top bg">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Initiatives Blogs</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6" data-ng-repeat="blog in blogList">
+                <div class="default-blog-news">
+                    <div class="img-box" style="border:1px solid #f4f4f4;">
+                        <a href="#!/blog_detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" style="height:200px; width:370px;" alt="News"></a>
+                    </div>
+                    <div class="lower-content">
+                        <div class="post-meta">by {{blog.author.displayName}}  |  {{blog.published | date:"EEE dd MMM, yyyy 'at' h:mma"}}</div>
+                        <div class="text">
+                            <h4><a href="#!/blog_detail?blogid={{blog.id}}">{{blog.title | characters:30}}</a></h4>
+                            <p>{{blog.plainText | characters:150}}</p>
+                        </div>
 
-<section class="growth-service style-2 sec-padd" style="background:#f7f7f7;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="growth-service style-2 sec-padd">
     <div class="container">
         <div class="section-title center">
             <h2>Arz kia hai</h2>
@@ -86,7 +111,7 @@
 </section>
 
 
-<section class="growth-service style-2 sec-padd">
+<section class="growth-service style-2 sec-padd" style="background:#f7f7f7;">
     <div class="container">
         <div class="section-title center">
             <h2>Mimamasa Bastar</h2>
@@ -109,44 +134,6 @@
                     <img src="images/resource/Copy of mimamsa (1).png" alt="">
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="growth-service style-2 sec-padd" style="background:#f7f7f7;">
-    <div class="container">
-        <div class="section-title center">
-            <h2>Alphapreneur</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="about-info">
-                    <div class="text text-align">
-                        <p>Do you think that an Artist is an artist because of his talent?
-No, he is an artist because of the vision he portrays through his work.
-Or is it really possible for an Entrepreneur to make a place for him in this
-cut throat competition?
-Yes, it is.</p><br>
-                        <p>If he has the courage to take risks and empower others along with them.
-Or do you believe that something has to be changed around you and you
-can make that change?
-Then Alphaprenuer Community is the right Community for you.
-</p><br>
-                        <p>It is a community of such Artists, Entrepreneurs and Changemakers who
-have such vision, risk taking abilities and will to empower others along with them. </p>
-                    </div>
-                    <br />
-                    <div class="link_btn">
-                        <a href="http://www.alphapreneur.org/" target="_blank" class="thm-btn">know more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="img-box">
-                    <img src="images/resource/Copy of Text logo.jpg" alt="">
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
@@ -174,6 +161,49 @@ have such vision, risk taking abilities and will to empower others along with th
                     <img src="images/Initiatives/Tedex.jpg" alt="">
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="growth-service style-2 sec-padd" style="background:#f7f7f7;">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Alphapreneur</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="about-info">
+                    <div class="text text-align">
+                        <p>
+                            Do you think that an Artist is an artist because of his talent?
+                            No, he is an artist because of the vision he portrays through his work.
+                            Or is it really possible for an Entrepreneur to make a place for him in this
+                            cut throat competition?
+                            Yes, it is.
+                        </p><br>
+                        <p>
+                            If he has the courage to take risks and empower others along with them.
+                            Or do you believe that something has to be changed around you and you
+                            can make that change?
+                            Then Alphaprenuer Community is the right Community for you.
+                        </p><br>
+                        <p>
+                            It is a community of such Artists, Entrepreneurs and Changemakers who
+                            have such vision, risk taking abilities and will to empower others along with them.
+                        </p>
+                    </div>
+                    <br />
+                    <div class="link_btn">
+                        <a href="http://www.alphapreneur.org/" target="_blank" class="thm-btn">know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="img-box">
+                    <img src="images/resource/Copy of Text logo.jpg" alt="">
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

@@ -53,7 +53,7 @@
                         <br>
                         <h4>For, Startups</h4>
                         <br>
-                      
+
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="img-box">
@@ -62,7 +62,7 @@
                         <br>
                         <h4>For, Corporates</h4>
                         <br>
-                      
+
                     </div>
                 </div>
             </div>
@@ -74,52 +74,28 @@
 <section class="three-column sec-padd-top bg">
     <div class="container">
         <div class="section-title center">
-            <h2>Our History In Words</h2>
+            <h2>Corporate & Personal Blogs</h2>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="#"><img src="images/resource/9.jpg" alt="Awesome Image"></a>
-                        <div class="count">1974</div>
-                    </figure>
-                    <div class="text-box">
-                        <a href="#"><h4>Starts at Newyork City</h4></a>
-                        <p>Fortuna story stretches back more than 125 years and encompasses several predecessor companies and the inspiring work of tens of thousands of people. But our core mission and values.</p>
+            <div class="col-md-4 col-sm-6" data-ng-repeat="blog in blogList">
+                <div class="default-blog-news">
+                    <div class="img-box" style="border:1px solid #f4f4f4;">
+                        <a href="#!/blog_detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" style="height:200px; width:370px;" alt="News"></a>
                     </div>
+                    <div class="lower-content">
+                        <div class="post-meta">by {{blog.author.displayName}}  |  {{blog.published | date:"EEE dd MMM, yyyy 'at' h:mma"}}</div>
+                        <div class="text">
+                            <h4><a href="#!/blog_detail?blogid={{blog.id}}">{{blog.title | characters:30}}</a></h4>
+                            <p>{{blog.plainText | characters:150}}</p>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="#"><img src="images/resource/10.jpg" alt="Awesome Image"></a>
-                        <div class="count">1976</div>
-                    </figure>
-                    <div class="text-box">
-                        <a href="#"><h4>New Focus on Raw Materials</h4></a>
-                        <p>Competition and a sudden sharp rise in the cost of raw materials leads many to set up associations, promoting their interets & defending themselves against supplier monopolies, all around the world.</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="single-our-service">
-                    <figure class="img-box">
-                        <a href="#"><img src="images/resource/11.jpg" alt="Awesome Image"></a>
-                        <div class="count">1982</div>
-                    </figure>
-                    <div class="text-box">
-                        <a href="#"><h4>Business Around the World</h4></a>
-                        <p>The company has been selling its products throughout the world for a long time. In 1982, the company Controls Corporation and began establishing a track record of global expansion.</p>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
+
 
 <section class="latest-project sec-padd">
     <div class="container">
@@ -355,7 +331,7 @@
 </section>
 
 <!--<section class="our-services style-2">
-    <div class="container"> 
+    <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <div class="single-our-service">
@@ -365,7 +341,7 @@
                     <div class="text-box">
                         <a href="service-single.html"><h4>Corporate and Personal Profiling</h4></a>
                         <p>Includes varied services from designing appropriate name of your venture, its mission and core value framework to its web and app presence for Startups and Corporates.</p>
-                    </div>                      
+                    </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -389,7 +365,7 @@
                         <a href="service-single.html"><h4>PR and Promotions</h4></a>
                         <p>From Mrs.India Worldwide and Globe to popular TV show BIGG BOSS to political fronts and multinational brands we have expressed them out to create Impact on  their target audience.</p>
                     </div>
-                        
+
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -401,7 +377,7 @@
                         <a href="service-single.html"><h4>Expression Expert</h4></a>
                         <p>Can’t Express Out? No problem. Our Expression Experts will help you in letting your feelings out, so that your dear ones or your enemies get what they deserves!</p>
                     </div>
-                        
+
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -413,7 +389,7 @@
                         <a href="service-single.html"><h4>Our Initiatives</h4></a>
                         <p>We love to take initiatives for society, because we try to give back just a little of so much we have received from our Earth and the fact that Human is a social animal otherwise we would have born alone on this planet!</p>
                     </div>
-                        
+
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
@@ -425,7 +401,7 @@
                         <a href="service-single.html"><h4>Our Process</h4></a>
                         <p>we do the same thing you call as PR, Consultancy, Marketing and Branding but we are different and may not be better but just at the right place, where you need us!</p>
                     </div>
-                        
+
                 </div>
             </div>
 
