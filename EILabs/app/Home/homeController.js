@@ -127,24 +127,49 @@ app.controller('homeController', ['$scope', '$rootScope', 'blogService', functio
 
 }]);
 
-//app.directive('owlCarousel', [function () {
-//    return {
-//        restrict: 'EA',
-//        transclude: false,
-//        scope: {
-//            owlOptions: '='
-//        },
-//        link: function (scope, element, attrs) {
-//            scope.initCarousel = function () {
-//                $(element).owlCarousel(scope.owlOptions);
-//            };
-//        }
-//    }
-//}])
-//app.directive('owlCarouselItem', [function () {
-//    return function (scope) {
-//        if (scope.$last) {
-//            scope.initCarousel();
-//        }
-//    };
-//}]);
+app.directive("owlCarousel", function() {
+    return {
+        restrict: 'E',
+        transclude: false,
+        link: function (scope) {
+            scope.initCarousel = function(element) {
+                // provide any default options you want
+                var defaultOptions = {
+                    //nav: true,
+                    //navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    loop: true,
+                    responsiveClass: true,
+                    margin: 30,
+                    responsive: {
+                        0: { items: 1 },
+                        767: { items: 2 },
+                        992: { items: 3 }
+                    }
+                };
+                var customOptions = scope.$eval($(element).attr('data-options'));
+                // combine the two options objects
+                for(var key in customOptions) {
+                    defaultOptions[key] = customOptions[key];
+                }
+                // init carousel
+                $(element).owlCarousel(defaultOptions);
+            };
+        }
+    };
+})
+.directive('owlCarouselItem', ['$timeout', function ($timeout) {
+    return {
+        restrict: 'A',
+        transclude: false,
+        link: function(scope, element) {
+            // wait for the last item in the ng-repeat then call init
+            if(scope.$last) {
+                $timeout(function () {
+                    scope.initCarousel(element.parent());
+                }, 50);
+            }
+        }
+    };
+}]);

@@ -411,11 +411,11 @@
                     <h2>Our Initiatives</h2>
                 </div>
                 <div class="text">
-                    <p>We love to take initiatives for society, because we try to give back just a little of so much we have received from our Earth and the fact that Human is a social animal otherwise i would have have born alone on this planet!</p>
+                    <p>We love to take initiatives for society, because we try to give back just a little of so much we have received from our Earth and the fact that Human is a social animal otherwise i would have born alone on this planet!</p>
                     <!--<p>We are also greatly inspired by an Indian philosopher named “Shivani” who says: “ When I becomes WE even Illness becomes WEllness”</p>-->
                 </div>
                 <div class="link">
-                    <a href="" class="default_link">More projects <i class="fa fa-angle-right"></i></a>
+                    <a href="#!/initiative" class="default_link">Read More <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
@@ -447,7 +447,7 @@
                     <div class="item">
                         <div class="single-latest-project-carousel">
                             <div class="img-box">
-                                <img src="images/resource/Copy of mimamsa.png" alt="Awesome Image" />
+                                <img src="images/resource/mimamsa.png" alt="Awesome Image" />
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content">
@@ -504,7 +504,7 @@
                     <div class="item">
                         <div class="single-latest-project-carousel">
                             <div class="img-box">
-                                <img src="images/resource/img-3.jpg" alt="Awesome Image" />
+                                <img src="images/resource/alphapreneur.jpg" alt="Awesome Image" />
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content">
@@ -566,39 +566,6 @@
 
 <div class="container"><div class="border-bottom"></div></div>
 
-<!--<section class="testimonials-section sec-padd">
-    <div class="container">
-        <div class="section-title center">
-            <h2>second testimonials</h2>
-        </div>
-
-
-        <owl-carousel owl-options="owlOptions">
-
-
-            <article owl-carousel-item class="item" ng-repeat="blog in blogList">
-                <div class="quote"><span class="icon-left"></span></div>
-                <div class="author">
-                    <div class="img-box">
-                        <a href="#"><img src="images/resource/6.png" alt=""></a>
-                    </div>
-                    <h4>Real group of companies</h4>
-                </div>
-
-                <div class="slide-text">
-                    <p>
-                        kudos and thanks to whole EI labs for supporting us so aggressively in limited time , producing and delivering
-                        our profile. From the company logo to the PR activity  and customer service, everything is detailed  and cared for;
-                        Their  creative insights coupled with technical capabilities and marvelous execution makes them unmatched .
-                    </p>
-                </div>
-            </article>
-
-        </owl-carousel>
-
-    </div>
-</section>-->
-
 
 <section class="blog-section sec-padd-top">
     <div class="container">
@@ -606,11 +573,11 @@
             <h2>Latest Blogs</h2>
         </div>
 
-        <div class="row">
-            <div class="col-md-4 col-sm-6" data-ng-repeat="blog in blogList | limitTo:3">
+        <data-owl-carousel class="owl-carousel">
+            <div owl-carousel-item="" ng-repeat="blog in blogList" class="item">
                 <div class="default-blog-news">
                     <div class="img-box" style="border:1px solid #f4f4f4;">
-                        <a href="#!/blog_detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" style="height:200px; width:370px;" alt="News"></a>
+                        <a href="#!/blog_detail?blogid={{blog.id}}"><img src="{{blog.imgUrl}}" style="height:200px; width:370px;" alt=""></a>
                     </div>
                     <div class="lower-content">
                         <div class="post-meta">by {{blog.author.displayName}}  |  {{blog.published | date:"EEE dd MMM, yyyy 'at' h:mma"}}</div>
@@ -622,10 +589,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="center">
+        </data-owl-carousel>
+
+        <!--<div class="center">
             <a href="#!/blog_list" class="thm-btn">know more</a>
-        </div>
+        </div>-->
         <br />
     </div>
 </section>
