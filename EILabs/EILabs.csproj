@@ -139,7 +139,7 @@
     <Content Include="images\logo\Untitled-1.jpg" />
     <Content Include="images\PR and Promotions\12540724_903630089735771_6574479036037339581_n.jpg" />
     <Content Include="images\PR and Promotions\13ca1ba699a24c3ebf27ae90c24956e6.png" />
-    <Content Include="images\PR and Promotions\16939699_1851638801785764_5592832482251858662_n.jpg" />
+    <Content Include="images\PR and Promotions\checkedIn.jpg" />
     <Content Include="images\PR and Promotions\4.png" />
     <Content Include="images\PR and Promotions\5.png" />
     <Content Include="images\PR and Promotions\7.png" />
@@ -170,6 +170,7 @@
     <Content Include="images\resource\4.png" />
     <Content Include="images\resource\6.png" />
     <Content Include="images\resource\AAEAAQAAAAAAAAeVAAAAJGZlZTc1M2IwLTU2NTAtNDY1My04YzRhLWVhMzUxOWRlZjQwYw.png" />
+    <Content Include="images\resource\alphapreneur.jpg" />
     <Content Include="images\resource\Bigg_Boss_Kannada_1_Logo.jpg" />
     <Content Include="images\resource\business_user_comment.png" />
     <Content Include="images\resource\canstock23269223.jpg" />
@@ -190,6 +191,7 @@
     <Content Include="images\resource\LOGO %281%29.jpg" />
     <Content Include="images\resource\Logo png.png" />
     <Content Include="images\resource\Logo-of-Chhattisgarh-Tourism-Board.png" />
+    <Content Include="images\resource\mimamsa.png" />
     <Content Include="images\resource\o-DIVORCE-CONSULTATION-facebook.jpg" />
     <Content Include="images\resource\other.jpg" />
     <Content Include="images\resource\Reingineering-Banner-700x300.jpg" />
@@ -198,6 +200,7 @@
     <Content Include="images\resource\startup-kYAF--621x414%40LiveMint.jpg" />
     <Content Include="images\resource\team-building-568x275.jpg" />
     <Content Include="images\resource\teamSlider.jpg" />
+    <Content Include="images\resource\TedexPandri.png" />
     <Content Include="images\resource\user_comment.png" />
     <Content Include="images\resource\woman-thinking-blogging-thoughts.jpg" />
     <Content Include="images\resource\xpic11076.jpg" />
@@ -211,14 +214,6 @@
     <Content Include="images\slider\slider1.jpg" />
     <Content Include="images\slider\slider3.jpg" />
     <Content Include="images\slider\teamSlider.jpg" />
-    <Content Include="images\team\1 %281%29.jpg" />
-    <Content Include="images\team\dushyant.jpg" />
-    <Content Include="images\team\koushal.jpg" />
-    <Content Include="images\team\nikita.jpg" />
-    <Content Include="images\team\priyanka.jpg" />
-    <Content Include="images\team\sriti.jpg" />
-    <Content Include="images\team\yogesh.jpg" />
-    <Content Include="images\team\yogpic.jpg" />
     <Content Include="packages.config" />
     <Content Include="assets\revolution\css\index.php" />
     <Content Include="assets\revolution\fonts\font-awesome\css\index.php" />
@@ -389,26 +384,6 @@
     <Content Include="images\resource\3.jpg" />
     <Content Include="images\slider\2.jpg" />
     <Content Include="images\slider\3.jpg" />
-    <Content Include="images\team\1.jpg" />
-    <Content Include="images\team\1.png" />
-    <Content Include="images\team\2.jpg" />
-    <Content Include="images\team\2.png" />
-    <Content Include="images\team\3.jpg" />
-    <Content Include="images\team\3.png" />
-    <Content Include="images\team\4.jpg" />
-    <Content Include="images\team\4.png" />
-    <Content Include="images\team\5.jpg" />
-    <Content Include="images\team\5.png" />
-    <Content Include="images\team\6.jpg" />
-    <Content Include="images\team\6.png" />
-    <Content Include="images\team\7.jpg" />
-    <Content Include="images\team\7.png" />
-    <Content Include="images\team\8.jpg" />
-    <Content Include="images\team\8.png" />
-    <Content Include="images\team\t1.jpg" />
-    <Content Include="images\team\t2.jpg" />
-    <Content Include="images\team\t3.jpg" />
-    <Content Include="images\team\t4.jpg" />
     <Content Include="index.html" />
     <Content Include="js\bootstrap-select.min.js" />
     <Content Include="js\bootstrap.min.js" />
@@ -451,11 +426,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\blog\" />
-    <Folder Include="images\project\" />
-    <Folder Include="images\shop\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
