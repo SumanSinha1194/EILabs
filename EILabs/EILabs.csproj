@@ -214,6 +214,15 @@
     <Content Include="images\slider\slider1.jpg" />
     <Content Include="images\slider\slider3.jpg" />
     <Content Include="images\slider\teamSlider.jpg" />
+    <Content Include="images\team\Akhil Reddy.jpg" />
+    <Content Include="images\team\Dharmesh kotak %281%29.jpg" />
+    <Content Include="images\team\Dushyant.jpg" />
+    <Content Include="images\team\Gaurav Singh.jpg" />
+    <Content Include="images\team\Jinendra.jpg" />
+    <Content Include="images\team\nitin bhansali.jpg" />
+    <Content Include="images\team\Sumit Jha.jpg" />
+    <Content Include="images\team\Ujjawal Dutt.jpg" />
+    <Content Include="images\team\Utkarsh.jpg" />
     <Content Include="packages.config" />
     <Content Include="assets\revolution\css\index.php" />
     <Content Include="assets\revolution\fonts\font-awesome\css\index.php" />

@@ -29,7 +29,7 @@
             <h3>contact details</h3>
         </div>
         <div class="text">
-            <p>If you want to express your feelings to Clients|Customers|Target audience. Get in Touch With Us.</p>
+            <p>If you want to express your feelings to Clients | Customers | Target audience | Your near and dear ones. Get in Touch With Us.</p>
         </div>
         <br><br>
         <div class="row">
@@ -110,7 +110,62 @@
     <div class="border-bottom"></div>
 </div>
 
+<section class="contact_us sec-padd">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                <div class="section-title">
+                    <h3>Send Your Message Us</h3>
+                </div>
+                <div class="default-form-area">
+                    <form id="contact-form" name="contact_form" class="default-form">
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
+                                <div class="form-group">
+                                    <input type="text" name="form_name" class="form-control" value="" placeholder="Your Name *" data-ng-model="contact.Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" name="form_email" class="form-control required email" value="" placeholder="Your Mail *" data-ng-model="contact.Email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone" data-ng-model="contact.Phone" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="form_nationality" class="form-control" value="" placeholder="Nationality" data-ng-model="contact.Nationality" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <textarea name="form_message" class="form-control textarea required" placeholder="Your Message...." data-ng-model="contact.Message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                     <button class="thm-btn thm-color" type="button" data-ng-click="sendEmail()">send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div data-ng-hide="message == '' || error == true" class="alert alert-dismissible alert-info text-center" style="margin-bottom:40px;">
+                        {{message}}
+                        <br />
+                    </div>
+                    <div data-ng-hide="message == '' || success == true" class="alert alert-dismissible alert-danger text-center" style="margin-bottom:40px;">
+                        {{message}}
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script>
     function myMap() {

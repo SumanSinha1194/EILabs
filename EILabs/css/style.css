@@ -260,6 +260,41 @@ input,textarea {font-family: 'Hind', sans-serif;display: block; font-size: 16px;
 }
 
 
+.team-title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+.team-title h2 {
+  position: relative;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.team-title h3 {
+  position: relative;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.team-title h4 {
+  position: relative;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.team-title:before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: #48c7ec;
+}
+.team-title.center:before {
+    left: 50%;
+    margin-left: -25px;
+}
+
+
 
 
 .scroll-top {
