@@ -114,6 +114,7 @@
     <Content Include="images\background\ourWorkBanner.jpg" />
     <Content Include="images\background\services-background.jpg" />
     <Content Include="images\background\social-media-marketing-banner.jpg" />
+    <Content Include="images\background\teamSlider.jpg" />
     <Content Include="images\clients\cglogo.png" />
     <Content Include="images\clients\image_388.jpg" />
     <Content Include="images\clients\media1.png" />
